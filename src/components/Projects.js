@@ -89,7 +89,7 @@ function Projects() {
                         <CardMedia
                         component="img"
                         height="160"
-                        image="/todolist.png"
+                        image="./todolist.png"
                         alt="todolist"
                         />
                         <CardContent>
