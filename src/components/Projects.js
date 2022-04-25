@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, CardContent, CardMedia, CardActionArea, Paper, Button, Grid, Typography, Chip} from '@mui/material';
+import { Card, CardContent, CardMedia, CardActionArea, Button, Grid, Typography, Chip} from '@mui/material';
 import Icon from '@mui/material/Icon';
 
 
