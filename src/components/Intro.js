@@ -12,7 +12,7 @@ function Intro() {
     return (
         <div>
             <Grid container spacing={0} sx={{my:7, justifyContent:"center"}}>
-                <Grid item xs={12} md={4} sx={{margin:'auto'}}>
+                <Grid item xs={8} md={4} >
                     <Paper 
                         elevation={0}
                         sx={{
@@ -48,7 +48,7 @@ function Intro() {
                             />
                     </Paper>
                 </Grid>
-                <Grid item xs={6} md={4} sx={{textAlign: { md:'left',xs:'center'}, my:'auto'}}>
+                <Grid item xs={6} md={4} sx={{textAlign: { md:'left', xs:'center'}, my:'auto'}}>
                     <Paper 
                         elevation={0} 
                         sx={{
@@ -62,13 +62,13 @@ function Intro() {
                         <Typography variant="subtitle1" component="p" sx={{ pt:3,color: '#8C7B80' }} >
                         Lorem ipsum dolor amet ultricies et tempus. Magna sed etiam consequat, et lorem adipiscing sed euismod tempor.
                         </Typography>
-                        <IconButton aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
+                        <IconButton onClick={()=> window.open('https://www.linkedin.com/in/yaphpk-2101/')}aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
                             <LinkedInIcon/>
                         </IconButton>
-                        <IconButton  aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
+                        <IconButton onClick={()=> window.open('https://github.com/yaphazel')} aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
                             <GitHubIcon/>
                         </IconButton>
-                        <IconButton  aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
+                        <IconButton onClick={()=> window.open('https://www.behance.net/hazelyap')} aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
                             <FontAwesomeIcon icon={faBehanceSquare} />
                         </IconButton>
                     </Paper>

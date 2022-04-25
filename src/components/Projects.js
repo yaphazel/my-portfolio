@@ -25,10 +25,11 @@ function Projects() {
             Projects
         </Typography>
         <Typography 
-            variant="subtitle1" component="p" 
+            variant="subtitle2" component="p" 
             sx={{
-                color: '#8C7B80',
+                color: '#E09B88',
                 mt:2,
+                letterSpacing: 2,
                 fontStyle: 'italic',
             }}
         >
