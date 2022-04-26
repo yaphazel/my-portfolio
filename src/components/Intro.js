@@ -30,7 +30,7 @@ function Intro() {
                                     display: { xs:"none", md:"block"}
                                 }}
                                 alt="Rectangle profile picture"
-                                src="./my-portfolio/profile.jpg"
+                                src="./profile.jpg"
                             />
                             <Box
                                 component="img"
@@ -44,7 +44,7 @@ function Intro() {
                                     margin:'auto'
                                 }}
                                 alt="Round profile picture"
-                                src="./my-portfolio/profile-round.jpg"
+                                src="./profile-round.jpg"
                             />
                     </Paper>
                 </Grid>
