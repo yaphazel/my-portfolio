@@ -48,10 +48,10 @@ function Projects() {
                         <CardContent>
                             
                             <div>
-                                    <Chip icon={<Icons />} label="React.js" size="small" variant="outlined" sx={{mx:0.5}} />
-                                    <Chip icon={<Icons />}  label="Bootstrap" size="small" variant="outlined" sx={{mx:0.5}}/>
+                                    <Chip icon={<Icons />} label="React.js" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}} />
+                                    <Chip icon={<Icons />}  label="Bootstrap" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}}/>
                             </div>
-                            <Typography gutterBottom variant="p" component="div" sx={{ fontSize: 22, pt:3, fontWeight: 500 }}>
+                            <Typography gutterBottom variant="p" component="div" sx={{color: '#8C7B80', fontSize: 20, pt:3, fontWeight: 500 }}>
                                 Airbnb Remake
                             </Typography>
                             <Button variant="text" href="https://yaphazel.github.io/airbnb-react-remake/" sx={{ my:2, color: '#E09B88' }}>Webpage</Button>
@@ -71,11 +71,11 @@ function Projects() {
                         />
                         <CardContent>
                         <div>
-                            <Chip icon={<Icons />}  label="PHP" size="small" variant="outlined" sx={{mx:0.5}}/>
-                            <Chip icon={<Icons />}  label="MySQL" size="small" variant="outlined" sx={{mx:0.5}} />
-                            <Chip icon={<Icons />}  label="HTML &amp; CSS" size="small" variant="outlined" sx={{mx:0.5}} />
+                            <Chip icon={<Icons />}  label="PHP" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}}/>
+                            <Chip icon={<Icons />}  label="MySQL" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}} />
+                            <Chip icon={<Icons />}  label="HTML &amp; CSS" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}} />
                         </div>
-                        <Typography gutterBottom variant="p" component="div" sx={{ fontSize: 22, pt:3, fontWeight: 500 }}>
+                        <Typography gutterBottom variant="p" component="div" sx={{ color: '#8C7B80', fontSize: 20, pt:3, fontWeight: 500 }}>
                             Signup/Login - To Do List 
                         </Typography>
                         <Button variant="text" href="https://github.com/yaphazel/todolist-php" sx={{ my:2, color: '#E09B88' }}>Code</Button>
@@ -96,10 +96,10 @@ function Projects() {
                         <CardContent>
                         
                             <div>
-                                <Chip icon={<Icons />}  label="JavaScript" size="small" variant="outlined" sx={{mx:0.5}} />
-                                <Chip icon={<Icons />}  label="HTML &amp; CSS" size="small" variant="outlined" sx={{mx:0.5}} />
+                                <Chip icon={<Icons />}  label="JavaScript" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}} />
+                                <Chip icon={<Icons />}  label="HTML &amp; CSS" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}} />
                             </div>
-                            <Typography gutterBottom variant="p" component="div" sx={{ fontSize: 22, pt:3, fontWeight: 500 }}>
+                            <Typography gutterBottom variant="p" component="div" sx={{color: '#8C7B80', fontSize: 20, pt:3, fontWeight: 500 }}>
                             To Do List
                             </Typography>
                             <Button variant="text" href="https://yaphazel.github.io/todoist-html/" sx={{ my:2, color: '#E09B88' }}>Webpage</Button>

@@ -60,7 +60,7 @@ function Intro() {
                         <Typography variant="h3" component="h3" sx={{ letterSpacing: 4, color: '#8C7B80' }}>Hello,</Typography>
                         
                         <Typography variant="subtitle1" component="p" sx={{ pt:3,color: '#8C7B80' }} >
-                        Lorem ipsum dolor amet ultricies et tempus. Magna sed etiam consequat, et lorem adipiscing sed euismod tempor.
+                            I'm Hazel Yap, an engineering student who is interesting in visual design and web developement.
                         </Typography>
                         <IconButton onClick={()=> window.open('https://www.linkedin.com/in/yaphpk-2101/')}aria-label="upload picture" component="span" sx={{ py:2, color: '#E09B88' }}>
                             <LinkedInIcon/>
