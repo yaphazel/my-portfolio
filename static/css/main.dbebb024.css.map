@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.dbebb024.css","mappings":"AAAA,EAGE,wBAAyB,CAFzB,QAAS,CACT,SAEF,CAEA,KACE,wBACF,CAGA,KACE,iBACF","sources":["App.css"],"sourcesContent":["*{\n  margin: 0;\n  padding: 0;\n  font-family: \"Noto Serif\";\n}\n\nbody{\n  background-color: #FCF9F8;\n}\n\n\n.App {\n  text-align: center;\n}\n\n\n\n\n\n\n"],"names":[],"sourceRoot":""}
