@@ -16,7 +16,7 @@ function Projects() {
         <Typography 
             variant="h3" component="h3" 
             sx={{
-                color: '#8C7B80',
+                color: '#856c63',
                 mx:7,
                 mt:7,
                 letterSpacing: 2,
@@ -34,14 +34,38 @@ function Projects() {
             }}
         >
             imagine it, then create it.
+        {/*  */}
         </Typography>
-        <Grid container  spacing={3} sx={{my:8}}>
+        <Grid container  spacing={3} sx={{ width: "80%", margin:"auto" }}>
             <Grid item  xs={12} sm={6} md={4} sx={{ margin:'auto'}}>
-                <Card sx={{ maxWidth: 345, height: 320 , margin:'auto'}}>
-                    <CardActionArea sx={{height: 320 }}>
+                <Card sx={{ maxWidth: 350, height: 350 , margin:'auto'}}>
+                    <CardActionArea sx={{height: "100%" }}>
                         <CardMedia
                         component="img"
-                        height="160"
+                        height="165"
+                        image="./landing-cover.png"
+                        alt="airbnb"
+                        />
+                        <CardContent>
+                            
+                            <div>
+                                <Chip icon={<Icons />} label="UI/UX Design" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}} />
+                                <Chip icon={<Icons />}  label="Figma" size="small" variant="outlined" sx={{mx:0.5, fontWeight:500}}/>
+                            </div>
+                            <Typography gutterBottom variant="p" component="div" sx={{color: '#8C7B80', fontSize: 20, pt:3, fontWeight: 500 }}>
+                                Google Developer Student Club Landing Page
+                            </Typography>
+                            <Button variant="text" href="https://www.behance.net/gallery/142999005/Landing-Page" sx={{ my:2, color: '#E09B88' }}>Read More</Button>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+            </Grid>
+            <Grid item  xs={12} sm={6} md={4} sx={{ margin:'auto'}}>
+                <Card sx={{ maxWidth: 350, height: 350 , margin:'auto'}}>
+                    <CardActionArea sx={{height: "100%" }}>
+                        <CardMedia
+                        component="img"
+                        height="165"
                         image="./airbnb-remake.png"
                         alt="airbnb"
                         />
@@ -54,18 +78,18 @@ function Projects() {
                             <Typography gutterBottom variant="p" component="div" sx={{color: '#8C7B80', fontSize: 20, pt:3, fontWeight: 500 }}>
                                 Airbnb Remake
                             </Typography>
-                            <Button variant="text" href="https://yaphazel.github.io/airbnb-react-remake/" sx={{ my:2, color: '#E09B88' }}>Webpage</Button>
+                            <Button variant="text" href="https://yaphazel.github.io/airbnb-react-remake/" sx={{ my:2, color: '#E09B88' }}>Live Page</Button>
                             <Button variant="text" href="https://github.com/yaphazel/airbnb-react-remake" sx={{ my:2, color: '#E09B88' }}>Code</Button>
                         </CardContent>
                     </CardActionArea>
                 </Card>
             </Grid>
             <Grid item  xs={12} sm={6} md={4}>
-                <Card sx={{ maxWidth: 345, height: 320,  margin:'auto' }}>
-                    <CardActionArea sx={{height: 320 }}>
+                <Card sx={{ maxWidth: 350, height: 350,  margin:'auto' }}>
+                    <CardActionArea sx={{height: "100%" }}>
                         <CardMedia
                         component="img"
-                        height="160"
+                        height="165"
                         image="./todolist-signin-login.png"
                         alt="todolist-sign-log"
                         />
@@ -85,11 +109,11 @@ function Projects() {
                 </Card>
             </Grid>
             <Grid item  xs={12} sm={6} md={4}>
-                <Card sx={{ maxWidth: 345, height: 320 , margin:'auto' }}>
-                    <CardActionArea sx={{height: 320 }}>
+                <Card sx={{ maxWidth: 350, height: 350 , margin:'auto' }}>
+                    <CardActionArea sx={{height: "100%" }}>
                         <CardMedia
                         component="img"
-                        height="160"
+                        height="165"
                         image="./todolist.png"
                         alt="todolist"
                         />
@@ -102,13 +126,14 @@ function Projects() {
                             <Typography gutterBottom variant="p" component="div" sx={{color: '#8C7B80', fontSize: 20, pt:3, fontWeight: 500 }}>
                             To Do List
                             </Typography>
-                            <Button variant="text" href="https://yaphazel.github.io/todoist-html/" sx={{ my:2, color: '#E09B88' }}>Webpage</Button>
+                            <Button variant="text" href="https://yaphazel.github.io/todoist-html/" sx={{ my:2, color: '#E09B88' }}>Live Page</Button>
                             <Button variant="text" href="https://github.com/yaphazel/todoist-html" sx={{ my:2, color: '#E09B88' }}>Code</Button>
                         </CardContent>
                     </CardActionArea>
                 </Card>
             </Grid>
         </Grid>
+        
     </div>
   )
 }
