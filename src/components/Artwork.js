@@ -55,13 +55,12 @@ function Artwork() {
         <Box sx={{ width: "80%", margin:"auto" }}>
                 <ImageList sx={{m:2}} variant="masonry" cols={2} gap={8}>
                 {itemData.map((item) => (
-                    <ImageListItem key={item.img}>
+                    <ImageListItem sx={{width:150}}key={item.img}>
                         <img
                             src={`${item.img}?w=248&fit=crop&auto=format`}
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             alt={item.title}
                             loading="lazy"
-                            maxWidth="100"
                         />
                         <ImageListItemBar position="below" title={item.author} />
                     </ImageListItem>
