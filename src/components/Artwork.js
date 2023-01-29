@@ -61,7 +61,7 @@ function Artwork() {
                             srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                             alt={item.title}
                             loading="lazy"
-                            maxWidth="150"
+                            maxWidth="100"
                         />
                         <ImageListItemBar position="below" title={item.author} />
                     </ImageListItem>
