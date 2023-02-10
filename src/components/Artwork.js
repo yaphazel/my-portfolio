@@ -2,10 +2,9 @@ import React from "react";
 import { Typography, Box, ImageList, ImageListItem, ImageListItemBar} from '@mui/material';
 
 
-
 const itemData = [
     {
-        img:"./IMG-0410.jpg",
+        img:"/../IMG-0410.jpg",
         title:"fish"
     },
     {
@@ -32,23 +31,12 @@ function Artwork() {
     <div>
         <Typography 
             variant="h3" component="h3" 
-            sx={{
-                color: '#856c63',
-                mx:7,
-                mt:7,
-                letterSpacing: 2,
-            }}
+            sx={{ mt:7}}
         >
-           Design
+          Design
         </Typography>
         <Typography 
             variant="subtitle2" component="p" 
-            sx={{
-                color: '#E09B88',
-                mt:2,
-                letterSpacing: 2,
-                fontStyle: 'italic',
-            }}
         >
             design is thinking made visual
         </Typography>

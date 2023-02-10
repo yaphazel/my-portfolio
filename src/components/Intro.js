@@ -133,30 +133,17 @@ function Intro() {
                         }}
                     >
                         <Box sx={{ minHeight:"200px"}}>
-                            <Typography 
-                                variant="h3" 
-                                component="h3" 
-                                sx={{ letterSpacing: 4, color: '#856c63' }}>
+                            <Typography variant="h3"  component="h3" sx={{ p:1 }}>
                                 Hello, 
                             </Typography>
-                            <Typography 
-                                variant="h3" 
-                                component="h3" 
-                                sx={{ letterSpacing: 4, color: '#856c63' }}>
+                            <Typography variant="h3"  component="h3" sx={{ p:1 }}>
                                 I'm Hazel Yap,
                             </Typography>
-                            <Typography 
-                                variant="h3" 
-                                component="h3" 
-                                sx={{ letterSpacing: 4, color: '#856c63' }}>
+                            <Typography variant="h3"  component="h3" sx={{ p:1 }}>
                                 {text}
                             </Typography>
                         </Box>
                         
-                    
-                        <Typography variant="subtitle1" component="p" sx={{ pt:3,color: '#8C7B80' }} >
-                          
-                        </Typography>
                         <IconButton onClick={()=> window.open('https://www.linkedin.com/in/yaphpk-2101/')}aria-label="upload picture" component="span" sx={{ p:1, color: '#E09B88' }}>
                             <LinkedInIcon/>
                         </IconButton>
