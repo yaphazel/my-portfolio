@@ -14,7 +14,7 @@ function App() {
         <Navbar />
         <Intro/>
         <Projects/>
-        <Artwork />
+        {/* <Artwork /> */}
       </ThemeProvider>
     </div>
   );

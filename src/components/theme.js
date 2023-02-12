@@ -1,5 +1,4 @@
 import { createTheme } from "@mui/material";
-import { red } from "@mui/material/colors";
 
 
 const theme = createTheme({
@@ -11,7 +10,7 @@ const theme = createTheme({
             fontFamily: '"Noto Serif", sans-serif;',
             color: '#856c63',
             letterSpacing: 2,
-            fontSize: '1.7rem',
+            fontSize: '1.5rem',
             '@media (min-width:600px)': {
             fontSize: '2.5rem',
             },

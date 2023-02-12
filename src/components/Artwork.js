@@ -4,7 +4,7 @@ import { Typography, Box, ImageList, ImageListItem, ImageListItemBar} from '@mui
 
 const itemData = [
     {
-        img:"/../IMG-0410.jpg",
+        img:"./IMG-0410.jpg",
         title:"fish"
     },
     {
@@ -33,11 +33,9 @@ function Artwork() {
             variant="h3" component="h3" 
             sx={{ mt:7}}
         >
-          Design
+            Design
         </Typography>
-        <Typography 
-            variant="subtitle2" component="p" 
-        >
+        <Typography variant="subtitle2" component="p" >
             design is thinking made visual
         </Typography>
         <Box sx={{ width: "80%", margin:"auto" }}>

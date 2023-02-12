@@ -30,7 +30,7 @@ function Navbar() {
                        style={{ transformOrigin: "0 0 0"}} 
                        {...(show ? { timeout: 1000 } : {})}
                     >
-                        <Button style={{color:'#c9c9c9'}}>Project</Button>
+                        <Button style={{color:'#c9c9c9'}}>Projects</Button>
                     </Grow>
                     <Grow
                        in={show}
