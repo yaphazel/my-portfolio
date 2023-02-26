@@ -5,25 +5,10 @@ import { keyframes } from "@mui/material";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBehanceSquare } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBehanceSquare } from '@fortawesome/free-brands-svg-icons';
 
-// const expandText = keyframes`
-//     0% {
-//         letter-spacing: -0.5em;
-//         opacity: 0;
-//     }
-//     40% {
-//         opacity: 0.6;
-//     }
-//     100% {
-//         opacity: 1;
-//     }
-// `;
 
-// const Holder = styled(Typography)(({expand}) =>({
-//     animation: expand && `${expandText} 1s linear both`
-// }))
 
 const scalePic = keyframes `
 
@@ -84,8 +69,8 @@ function Intro() {
 
     return (
         <div >
-            <Grid container spacing={0} sx={{my:7, justifyContent:"center"}} >
-                <Grid item xs={8} md={4} >
+            <Grid container spacing={0} sx={{ justifyContent:'center', minHeight:"100vh"}} >
+                <Grid item xs={8} md={4} sx={{my: 'auto'}} >
                     <Paper 
                         elevation={0}
                         sx={{
@@ -95,16 +80,16 @@ function Intro() {
                     >   
                         <HolderPic scale={scale}>
                             <Box
-                                component="img"
+                                component='img'
                                 sx={{
-                                    maxWidth: 350,
+                                    maxWidth: 380,
                                     boxShadow: 2,
                                     backgroundColor: 'white',
                                     padding:2,
                                     display: { xs:"none", md:"block"}
                                 }}
                                 alt="Rectangle profile picture"
-                                src="./profile.jpg"
+                                src="./profile-round.jpg"
                             />
                         </HolderPic>
                             <Box
@@ -124,7 +109,7 @@ function Intro() {
                         
                     </Paper>
                 </Grid>
-                <Grid item xs={6} md={4} sx={{textAlign: { md:'left', xs:'center'}, my:'auto'}}>
+                <Grid item xs={6} md={4} sx={{textAlign: { md:'left', xs:'center'}, my: 'auto'}}>
                     <Paper 
                         elevation={0} 
                         sx={{

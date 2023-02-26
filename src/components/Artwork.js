@@ -4,23 +4,23 @@ import { Typography, Box, ImageList, ImageListItem, ImageListItemBar} from '@mui
 
 const itemData = [
     {
-        img:"./IMG-0410.jpg",
+        img:"./art-fish.jpg",
         title:"fish"
     },
     {
-        img:"./IMG-0412.jpg",
+        img:"./art-cup.jpg",
         title:"cup"
     },
     {
-        img:"./IMG-0411.jpg",
+        img:"./art-leaf.jpg",
         title:"leaf"
     },
     {
-        img:"./Magarita-01.png",
+        img:"./art-magarita.png",
         title:"magarita"
     },
     {
-        img:"./Strawberry-01.png",
+        img:"./art-strawberry.png",
         title:"strawberry"
     },
 
