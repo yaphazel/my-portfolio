@@ -42,9 +42,9 @@ const theme = createTheme({
         MuiButton: {
           styleOverrides: {
             root: {
-                fontSize:'0.9rem',
+                fontSize:'0.8rem',
                 '@media (min-width:1200px)': {
-                    fontSize: '1.1rem',
+                    fontSize: '0.9rem',
                 },
                 fontFamily: '"Noto Sans", sans-serif;',
                 '&:hover': {

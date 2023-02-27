@@ -82,14 +82,16 @@ function Intro() {
                             <Box
                                 component='img'
                                 sx={{
-                                    maxWidth: 380,
+                                    maxWidth: 360,
+                                    width:'auto',
+                                    height:'30vw',
                                     boxShadow: 2,
                                     backgroundColor: 'white',
                                     padding:2,
-                                    display: { xs:"none", md:"block"}
+                                    display: { xs:"none", sm:"none", md:"block"}
                                 }}
                                 alt="Rectangle profile picture"
-                                src="./profile-round.webp"
+                                src="./profile.webp"
                             />
                         </HolderPic>
                             <Box

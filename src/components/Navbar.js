@@ -24,7 +24,6 @@ function Navbar() {
                         >
                         Hazel
                     </Typography>
-                    
                     <Grow
                        in={show}
                        style={{ transformOrigin: "0 0 0"}} 
@@ -32,11 +31,11 @@ function Navbar() {
                     >
                         <Button style={{color:'#c9c9c9'}}>Projects</Button>
                     </Grow>
-                    <Grow
+                    {/* <Grow
                        in={show}
                     >
                         <Button style={{color:'#c9c9c9'}}>Skill</Button>
-                    </Grow>
+                    </Grow> */}
                     <Button
                         id="basic-button"
                         onClick={handleChange}
