@@ -48,7 +48,6 @@ function Artwork() {
                             alt={item.title}
                             loading="lazy"
                         />
-                        <ImageListItemBar position="below" title={item.author} />
                     </ImageListItem>
                 ))}
             </ImageList>

@@ -6,7 +6,42 @@ const Icons = () => {
     return (
         <Icon sx={{ color:'#8C7B80', fontSize:"small", pl:1}}>circle</Icon>
     );
-  }
+}
+
+const projectList = [
+    {
+        img:"project-airbnb-remake.webp",
+        alt:"airbnb",
+        title:"Airbnb Remake",
+        chips:["React.js","Bootstrap"],
+        livepage:"",
+        github:"https://github.com/yaphazel/airbnb-react-remake"
+    },
+    {
+        img:"./landing-cover.png",
+        alt:"signin-page",
+        title:"Signup & Login Page",
+        chips:["PHP","MySQL", "HTML & CSS"],
+        livepage:"",
+        github:"https://github.com/yaphazel/todolist-php"
+    },
+    {
+        img:"./landing-cover.png",
+        alt:"todolist",
+        title:"To-Do-List",
+        chips:["JavaScript","HTML & CSS"],
+        livepage:"https://yaphazel.github.io/todoist-html/",
+        github:"https://github.com/yaphazel/todoist-html"
+    },
+    {
+        img:"./landing-cover.png",
+        alt:"blog",
+        title:"Blog",
+        chips:["Node.js","EJS","JavaScript","HTML & CSS"],
+        livepage:"",
+        github:"https://github.com/yaphazel/blog-website"
+    }
+]
 
 function Projects() {
 
@@ -19,6 +54,36 @@ function Projects() {
             imagine it, then create it.
         </Typography>
         <Grid container  spacing={3} sx={{ width: "80%", margin:"auto" }}>
+            {projectList.map( (project) => (
+                <Grid item  xs={12} md={6} lg={4} sx={{ margin:'auto'}}>
+                    <Card sx={{ maxWidth: 350, height: 350 , margin:'auto'}}>
+                        <CardActionArea sx={{height: "100%" }}>
+                            <CardMedia
+                            component="img"
+                            height="165"
+                            image={project.img}
+                            alt={project.alt}
+                            />
+                            <CardContent>
+                                <div>
+                                    {project.chips.map((chip) => (
+                                         <Chip  label={chip} size="small" variant="outlined" sx={{m:0.5, fontWeight:500}} />
+                                    ))}
+                                </div>
+                                <Typography gutterBottom variant="p" component="div" >
+                                    {project.title}
+                                </Typography>
+                                {project.livepage.length > 0 &&
+                                     <Button variant="text" href={project.livepage} sx={{ my:1, color: '#E09B88' }}>Live Page</Button>  
+                                }
+                                <Button variant="text" href={project.github} sx={{ my:1, color: '#E09B88' }}>Source Code</Button>
+                            </CardContent>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+            ))}
+        </Grid>                    
+        {/* <Grid container  spacing={3} sx={{ width: "80%", margin:"auto" }}>
             <Grid item  xs={12} md={6} lg={4} sx={{ margin:'auto'}}>
                 <Card sx={{ maxWidth: 350, height: 350 , margin:'auto'}}>
                     <CardActionArea sx={{height: "100%" }}>
@@ -27,7 +92,7 @@ function Projects() {
                         component="img"
                         height="165"
                         image="./landing-cover.png"
-                        alt="airbnb"
+                        alt="ui-ux"
                         />
                         <CardContent>
                             
@@ -115,7 +180,7 @@ function Projects() {
                     </CardActionArea>
                 </Card>
             </Grid>
-        </Grid>
+        </Grid> */}
         
     </div>
   )
