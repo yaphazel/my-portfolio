@@ -18,7 +18,7 @@ const projectList = [
         github:"https://github.com/yaphazel/airbnb-react-remake"
     },
     {
-        img:"./landing-cover.png",
+        img:"project-todolist-signin.webp",
         alt:"signin-page",
         title:"Signup & Login Page",
         chips:["PHP","MySQL", "HTML & CSS"],
@@ -26,7 +26,7 @@ const projectList = [
         github:"https://github.com/yaphazel/todolist-php"
     },
     {
-        img:"./landing-cover.png",
+        img:"project-todolist.webp",
         alt:"todolist",
         title:"To-Do-List",
         chips:["JavaScript","HTML & CSS"],
@@ -34,7 +34,7 @@ const projectList = [
         github:"https://github.com/yaphazel/todoist-html"
     },
     {
-        img:"./landing-cover.png",
+        img:"blog.webp",
         alt:"blog",
         title:"Blog",
         chips:["Node.js","EJS","JavaScript","HTML & CSS"],

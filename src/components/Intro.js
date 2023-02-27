@@ -89,7 +89,7 @@ function Intro() {
                                     display: { xs:"none", md:"block"}
                                 }}
                                 alt="Rectangle profile picture"
-                                src="./profile-round.jpg"
+                                src="./profile-round.webp"
                             />
                         </HolderPic>
                             <Box
@@ -104,7 +104,7 @@ function Intro() {
                                     margin:'auto'
                                 }}
                                 alt="Round profile picture"
-                                src="./profile-round.jpg"
+                                src="./profile-round.webp"
                             />
                         
                     </Paper>

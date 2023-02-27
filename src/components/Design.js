@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, CardContent, CardMedia, CardActionArea, Grid, Typography, Button, Link} from '@mui/material';
-import Img from "../project-uiux-google.png";
 function Design() {
     return (
         <div >
