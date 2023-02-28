@@ -1,22 +1,16 @@
-import React from 'react'
+import { React} from 'react';
 import { Card, CardContent, CardMedia, CardActionArea, Button, Grid, Typography, Chip} from '@mui/material';
-import Icon from '@mui/material/Icon';
 
-const Icons = () => {
-    return (
-        <Icon sx={{ color:'#8C7B80', fontSize:"small", pl:1}}>circle</Icon>
-    );
-}
+//import Icon from '@mui/material/Icon';
+
+// const Icons = () => {
+//     return (
+//         <Icon sx={{ color:'#8C7B80', fontSize:"small", pl:1}}>circle</Icon>
+//     );
+// }
+
 
 const projectList = [
-    {
-        img:"project-airbnb-remake.webp",
-        alt:"airbnb",
-        title:"Airbnb Remake",
-        chips:["React.js","Bootstrap"],
-        livepage:"",
-        github:"https://github.com/yaphazel/airbnb-react-remake"
-    },
     {
         img:"project-todolist-signin.webp",
         alt:"signin-page",
@@ -24,6 +18,14 @@ const projectList = [
         chips:["PHP","MySQL", "HTML & CSS"],
         livepage:"",
         github:"https://github.com/yaphazel/todolist-php"
+    },
+    {
+        img:"project-template-img.webp",
+        alt:"console-game",
+        title:"School Project - Console Game",
+        chips:["C++"],
+        livepage:"",
+        github:"https://github.com/yaphazel/Group4Engg1340Comp2113CourseProject"
     },
     {
         img:"project-todolist.webp",
@@ -40,13 +42,22 @@ const projectList = [
         chips:["Node.js","EJS","JavaScript","HTML & CSS"],
         livepage:"",
         github:"https://github.com/yaphazel/blog-website"
+    },
+    {
+        img:"project-airbnb-remake.webp",
+        alt:"airbnb",
+        title:"Airbnb Remake",
+        chips:["React.js","Bootstrap"],
+        livepage:"",
+        github:"https://github.com/yaphazel/airbnb-react-remake"
     }
 ]
 
 function Projects() {
 
-  return (
-    <div>
+
+    return (
+    <div id="projects">
         <Typography variant="h3" component="h3"  sx={{ mt:7}}>
             Projects
         </Typography>

@@ -1,8 +1,8 @@
-import { React } from "react";
+import { React, useState } from "react";
 import { AppBar, Box, Toolbar, Button, Typography, Grow } from "@mui/material";
-import { useState } from "react";
 import MenuIcon  from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+
 
 
 function Navbar() {
@@ -29,7 +29,8 @@ function Navbar() {
                        style={{ transformOrigin: "0 0 0"}} 
                        {...(show ? { timeout: 1000 } : {})}
                     >
-                        <Button style={{color:'#c9c9c9'}}>Projects</Button>
+                        <a href="#projects" style={{color:'#c9c9c9', textDecoration:'none'}}>Projects</a>
+                        {/* <Link to="/projects" smooth={true} duration={500}>Project</Link> */}
                     </Grow>
                     {/* <Grow
                        in={show}

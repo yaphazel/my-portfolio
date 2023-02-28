@@ -1,6 +1,7 @@
 import { React, useState, useEffect } from 'react';
 import {  Paper, Grid, Typography, Box, IconButton, styled} from '@mui/material';
 
+
 import { keyframes } from "@mui/material";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -30,7 +31,6 @@ const HolderPic = styled(Typography)(({scale}) =>({
 }))
 
 function Intro() {
-    //const [expand, setExpand] = useState(false);
     const [scale, setScale] = useState(false);
 
     useEffect (() => {
