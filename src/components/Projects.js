@@ -1,13 +1,13 @@
 import { React} from 'react';
 import { Card, CardContent, CardMedia, CardActionArea, Button, Grid, Typography, Chip} from '@mui/material';
 
-//import Icon from '@mui/material/Icon';
+import Icon from '@mui/material/Icon';
 
-// const Icons = () => {
-//     return (
-//         <Icon sx={{ color:'#8C7B80', fontSize:"small", pl:1}}>circle</Icon>
-//     );
-// }
+const Icons = () => {
+    return (
+        <Icon sx={{ color:'#E09B88', fontSize:"small", pl:1}}>circle</Icon>
+    );
+}
 
 
 const projectList = [
@@ -78,16 +78,18 @@ function Projects() {
                             <CardContent>
                                 <div>
                                     {project.chips.map((chip) => (
-                                         <Chip  label={chip} size="small" variant="outlined" sx={{m:0.2, fontWeight:500, fontSize:"12px"}} />
+                                         <Chip icon={<Icons/>} label={chip} size="small" variant="outlined" sx={{m:0.2, fontWeight:500, fontSize:"11px"}} />
                                     ))}
                                 </div>
                                 <Typography gutterBottom variant="p" component="div" >
                                     {project.title}
                                 </Typography>
+                                
                                 {project.livepage.length > 0 &&
                                      <Button variant="text" href={project.livepage} sx={{ my:1, color: '#E09B88' }}>Live Page</Button>  
                                 }
                                 <Button variant="text" href={project.github} sx={{ my:1, color: '#E09B88' }}>Source Code</Button>
+                                
                             </CardContent>
                         </CardActionArea>
                     </Card>

@@ -124,9 +124,9 @@ function Intro() {
                                 Hello, 
                             </Typography>
                             <Typography variant="h3"  component="h3" sx={{ p:1 }}>
-                                I'm Hazel Yap,
+                                I'm Hazel Yap.
                             </Typography>
-                            <Typography variant="h3"  component="h3" sx={{ p:1 }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:1 }}>
                                 {text}
                             </Typography>
                         </Box>

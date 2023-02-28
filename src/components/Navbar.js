@@ -29,7 +29,7 @@ function Navbar() {
                        style={{ transformOrigin: "0 0 0"}} 
                        {...(show ? { timeout: 1000 } : {})}
                     >
-                        <a href="#projects" style={{color:'#c9c9c9', textDecoration:'none'}}>Projects</a>
+                        <a href="#projects" style={{color:'#c9c9c9', textDecoration:'none', fontSize:'18px'}}>Projects</a>
                         {/* <Link to="/projects" smooth={true} duration={500}>Project</Link> */}
                     </Grow>
                     {/* <Grow
