@@ -71,9 +71,10 @@ function Projects() {
                         <CardActionArea sx={{height: "100%" }}>
                             <CardMedia
                             component="img"
-                            height="165"
+                            height="170"
                             image={project.img}
                             alt={project.alt}
+                            sx={{mt:-2}}
                             />
                             <CardContent>
                                 <div>
