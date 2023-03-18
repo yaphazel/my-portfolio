@@ -75,7 +75,8 @@ function Intro() {
                         elevation={0}
                         sx={{
                             backgroundColor: '#FCF9F8',
-                            py:{xs:1,md:10}
+                            py:{md:10},
+                            pt:{xs:7}
                         }} 
                     >   
                         <HolderPic scale={scale}>
@@ -111,7 +112,7 @@ function Intro() {
                         
                     </Paper>
                 </Grid>
-                <Grid item xs={6} md={4} sx={{textAlign: { md:'left', xs:'center'}, my: 'auto'}}>
+                <Grid item xs={6} md={4} sx={{textAlign:{ md:'left', xs:'center'}, my:{md:'auto'}}}>
                     <Paper 
                         elevation={0} 
                         sx={{
@@ -120,18 +121,18 @@ function Intro() {
                         }}
                     >
                         <Box sx={{ minHeight:"200px"}}>
-                            <Typography variant="h3"  component="h3" sx={{ p:1 }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:{md:1} }}>
                                 Hello, 
                             </Typography>
-                            <Typography variant="h3"  component="h3" sx={{ p:1 }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:{md:1}  }}>
                                 I'm Hazel Yap.
                             </Typography>
-                            <Typography variant="h4"  component="h3" sx={{ p:1 }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:{md:1},pt:{xs:1} }}>
                                 {text}
                             </Typography>
                         </Box>
                         
-                        <IconButton onClick={()=> window.open('https://www.linkedin.com/in/yaphpk-2101/')}aria-label="upload picture" component="span" sx={{ p:1, color: '#E09B88' }}>
+                        <IconButton onClick={()=> window.open('https://www.linkedin.com/in/yaphpk-2101/')}aria-label="upload picture" component="span" sx={{ p:{md:1}, color: '#E09B88' }}>
                             <LinkedInIcon/>
                         </IconButton>
                         <IconButton onClick={()=> window.open('https://github.com/yaphazel')} aria-label="upload picture" component="span" sx={{ p:1, color: '#E09B88' }}>
