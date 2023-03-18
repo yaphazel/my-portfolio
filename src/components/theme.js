@@ -7,39 +7,37 @@ const theme = createTheme({
             fontFamily: '"Playfair Display", sans-serif',
             fontWeight: 500,
         },
-        h4:{
+        h4:{ // Intro Titles
             fontFamily: '"Playfair Display", sans-serif',
-            color: '#856c63',
+            color: '#856C63',
         },
-        h3:{
+        h3:{ // Section Titles
             fontFamily: '"Playfair Display", sans-serif',
             fontWeight: 500,
-            color: '#856c63',
+            color: '#856C63',
             letterSpacing: 2,
-            fontSize: '1.5rem',
+            fontStyle: 'italic',
+            fontSize: '2.1rem',
             '@media (min-width:600px)': {
             fontSize: '2.5rem',
             },
         },
-        subtitle1:{
-            fontFamily: '"Noto Sans", sans-serif;',
-        },
-        subtitle2:{
-            fontFamily: '"Noto Sans", sans-serif;',
+        subtitle1:{ // Section sub-title
+            fontFamily: '"Source Sans Pro", sans-serif;',
             color: '#E09B88',
-            marginTop:10, 
-            letterSpacing: 2,
-            fontStyle: 'italic',
-        } ,
-        p:{
-            color: '#8C7B80', 
+            letterSpacing: 5,
+            marginTop: 7
+        },
+        p:{  // Project title
+            color: '#856C63', 
+            fontWeight: 500,
+            fontSize: '1.3rem',
+            fontFamily: '"Playfair Display", sans-serif',
+        }, 
+        body2:{
+            color: 'grey', 
             marginTop:8, 
             fontWeight: 500,
-            fontSize: '1.1rem',
-            '@media (min-width:600px)': {
-            fontSize: '1.3rem',
-            },
-            
         } 
         
     },
@@ -48,11 +46,11 @@ const theme = createTheme({
         MuiButton: {
           styleOverrides: {
             root: {
-                fontSize:'0.6rem',
+                fontSize:'0.7rem',
                 '@media (min-width:1200px)': {
                     fontSize: '0.8rem',
                 },
-                fontFamily: '"Noto Sans", sans-serif;',
+                fontFamily: '"Source Sans Pro", sans-serif;',
                 '&:hover': {
                     backgroundColor: "#FCF9F8",
                 }

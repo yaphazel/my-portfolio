@@ -35,7 +35,7 @@ function Artwork() {
         >
             Design
         </Typography>
-        <Typography variant="subtitle2" component="p" >
+        <Typography variant="subtitle1" component="p" >
             design is thinking made visual
         </Typography>
         <Box sx={{ width: "80%", margin:"auto" }}>

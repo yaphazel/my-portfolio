@@ -1,7 +1,6 @@
 import { React, useState, useEffect } from 'react';
 import {  Paper, Grid, Typography, Box, IconButton, styled} from '@mui/material';
 
-
 import { keyframes } from "@mui/material";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -127,7 +126,7 @@ function Intro() {
                             <Typography variant="h4"  component="h3" sx={{ p:{md:1}  }}>
                                 I'm Hazel Yap.
                             </Typography>
-                            <Typography variant="h4"  component="h3" sx={{ p:{md:1},pt:{xs:1} }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:{md:1}, pt:{xs:1}  }}>
                                 {text}
                             </Typography>
                         </Box>
