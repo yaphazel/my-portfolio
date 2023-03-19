@@ -20,7 +20,7 @@ function Navbar() {
                         variant="h5" 
                         align="left" 
                         sx={{flexGrow:1}} 
-                        style={{color:'Black'}}
+                        style={{color:'#856C63'}}
                         >
                         Hazel
                     </Typography>
@@ -29,7 +29,7 @@ function Navbar() {
                        style={{ transformOrigin: "0 0 0"}} 
                        {...(show ? { timeout: 1000 } : {})}
                     >
-                        <a href="#projects" style={{color:'black', textDecoration:'none', fontSize:'18px', letterSpacing:2}}>Projects</a>
+                        <a href="#projects" style={{color:'#856C63', textDecoration:'none', fontSize:'18px', letterSpacing:2}}>Projects</a>
                         {/* <Link to="/projects" smooth={true} duration={500}>Project</Link> */}
                     </Grow>
                     {/* <Grow
@@ -43,7 +43,7 @@ function Navbar() {
                         aria-controls={show ? true : false}
                         disableRipple
                     >
-                        {show ?  <CloseIcon style={{color:'black'}}/> : <MenuIcon style={{color:'black'}}/>}
+                        {show ?  <CloseIcon style={{color:'#856C63'}}/> : <MenuIcon style={{color:'#856C63'}}/>}
                        
                     </Button>
                 </Toolbar>

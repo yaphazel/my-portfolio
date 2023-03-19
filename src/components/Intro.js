@@ -1,6 +1,5 @@
 import { React, useState, useEffect } from 'react';
 import {  Paper, Grid, Typography, Box, IconButton, styled} from '@mui/material';
-
 import { keyframes } from "@mui/material";
 
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -9,9 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBehanceSquare } from '@fortawesome/free-brands-svg-icons';
 
 
-
 const scalePic = keyframes `
-
     0% {
     -webkit-transform: translateZ(80px);
             transform: translateZ(80px);
@@ -69,14 +66,10 @@ function Intro() {
     return (
         <div >
             <Grid container spacing={0} sx={{ justifyContent:'center', minHeight:"100vh"}} >
-                <Grid item xs={8} md={4} sx={{my: 'auto'}} >
+                <Grid item xs={8} md={4} sx={{ my:{ xs:0 ,md:'auto' }, display: { xs:"none", sm:"none", md:"block"} }}  >
                     <Paper 
                         elevation={0}
-                        sx={{
-                            backgroundColor: '#FCF9F8',
-                            py:{md:10},
-                            pt:{xs:7}
-                        }} 
+                        sx={{ backgroundColor: '#FCF9F8' }} 
                     >   
                         <HolderPic scale={scale}>
                             <Box
@@ -88,45 +81,45 @@ function Intro() {
                                     boxShadow: 2,
                                     backgroundColor: 'white',
                                     padding:2,
-                                    display: { xs:"none", sm:"none", md:"block"}
                                 }}
                                 alt="Rectangle profile picture"
                                 src="./profile.webp"
                             />
                         </HolderPic>
+                    </Paper>
+                </Grid>
+                <Grid item xs={6} md={4} sx={{textAlign:{ xs:'center',  md:'left',},  my:{ md:'auto'}}}>
+                    <Paper 
+                        elevation={0} 
+                        sx={{
+                            backgroundColor: '#FCF9F8',
+                            py:{md:5}
+                        }}
+                    >   
                             <Box
                                 component="img"
                                 sx={{
-                                    maxWidth: 180,
+                                    maxWidth: 200,
                                     boxShadow: 2,
                                     borderRadius:50,
                                     backgroundColor: 'white',
                                     padding:1,
                                     display: { xs:"block", md:"none"},
-                                    margin:'auto'
+                                    margin:'auto',
+                                    marginTop: 12,
+                                    marginBottom: 5
                                 }}
                                 alt="Round profile picture"
                                 src="./profile-round.webp"
                             />
-                        
-                    </Paper>
-                </Grid>
-                <Grid item xs={6} md={4} sx={{textAlign:{ md:'left', xs:'center'}, my:{md:'auto'}}}>
-                    <Paper 
-                        elevation={0} 
-                        sx={{
-                            backgroundColor: '#FCF9F8',
-                            py:{xs:2,md:10}
-                        }}
-                    >
                         <Box sx={{ minHeight:"200px"}}>
                             <Typography variant="h4"  component="h3" sx={{ p:{md:1} }}>
                                 Hello, 
                             </Typography>
-                            <Typography variant="h4"  component="h3" sx={{ p:{md:1}  }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:{md:1} }}>
                                 I'm Hazel Yap.
                             </Typography>
-                            <Typography variant="h4"  component="h3" sx={{ p:{md:1}, pt:{xs:1}  }}>
+                            <Typography variant="h4"  component="h3" sx={{ p:{md:1} }}>
                                 {text}
                             </Typography>
                         </Box>
