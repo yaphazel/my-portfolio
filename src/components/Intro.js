@@ -40,7 +40,7 @@ function Intro() {
     const [text,setText] = useState('');
     const [loopNo,setLoopNo] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(250 - Math.random() * 100);
 
     useEffect (() =>{
         const interval = setInterval(() => {
@@ -71,7 +71,7 @@ function Intro() {
                         elevation={0}
                         sx={{ backgroundColor: '#FCF9F8' }} 
                     >   
-                        <HolderPic scale={scale}>
+                        {/* <HolderPic scale={scale}> */}
                             <Box
                                 component='img'
                                 sx={{
@@ -85,7 +85,7 @@ function Intro() {
                                 alt="Rectangle profile picture"
                                 src="./profile.webp"
                             />
-                        </HolderPic>
+                        {/* </HolderPic> */}
                     </Paper>
                 </Grid>
                 <Grid item xs={6} md={4} sx={{textAlign:{ xs:'center',  md:'left',},  my:{ md:'auto'}}}>
