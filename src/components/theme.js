@@ -64,7 +64,7 @@ const theme = createTheme({
 
             },
           },
-        },
+        }
       },
 })
 // theme.typography.h3 = {

@@ -74,14 +74,14 @@ function Projects() {
 
 
     return (
-    <div id="projects">
+    <div id="projects" style={{marginBottom:"80px"}} >
         <Typography variant="h3" component="h3"  >
             Projects
         </Typography>
         <Typography variant="subtitle1" component="p" >
             Imagine It, Then Create It.
         </Typography>
-        <Grid container spacing={3}  sx={{ width: "80%", margin:"auto", minHeight:"100vh", mb:5}}>
+        <Grid container spacing={3}  sx={{ width: "80%", margin:"auto", minHeight:"100vh"}}>
             {projectList.map( (project) => (
                 <Grid item  xs={12} md={6} lg={4} sx={{ margin:'auto'}}>
                     <Card sx={{ maxWidth: 340, height:{xs: 280 ,md:390}, display: { xs:"none", md:"block"}, margin:'auto'}}>

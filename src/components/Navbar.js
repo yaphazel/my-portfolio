@@ -30,13 +30,12 @@ function Navbar() {
                        {...(show ? { timeout: 1000 } : {})}
                     >
                         <a href="#projects" style={{color:'#856C63', textDecoration:'none', fontSize:'18px', letterSpacing:2}}>Projects</a>
-                        {/* <Link to="/projects" smooth={true} duration={500}>Project</Link> */}
                     </Grow>
-                    {/* <Grow
+                    <Grow
                        in={show}
                     >
-                        <Button style={{color:'#c9c9c9'}}>Skill</Button>
-                    </Grow> */}
+                       <a href="#creative" style={{color:'#856C63', textDecoration:'none', fontSize:'18px', letterSpacing:2, marginLeft:"20px"}}>Creative</a>
+                    </Grow>
                     <Button
                         id="basic-button"
                         onClick={handleChange}

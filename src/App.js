@@ -3,7 +3,7 @@ import './App.css';
 
 import Intro from './components/Intro';
 import Projects from './components/Projects';
-// import Design from './components/Design';
+import Design from './components/Design';
 import theme from './components/theme';
 import Navbar from './components/Navbar';
 
@@ -13,8 +13,8 @@ function App() {
       <ThemeProvider theme={theme}>
         <Navbar />
         <Intro/>
-        {/* <Design /> */}
         <Projects/>
+        <Design />
       </ThemeProvider>
     </div>
   );
