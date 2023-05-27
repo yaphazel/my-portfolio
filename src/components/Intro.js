@@ -130,7 +130,7 @@ function Intro() {
                         <IconButton onClick={()=> window.open('https://github.com/yaphazel')} aria-label="upload picture" component="span" sx={{ p:1, color: '#E09B88' }}>
                             <GitHubIcon/>
                         </IconButton>
-                        <IconButton onClick={()=> window.open('https://www.behance.net/hazelyap')} aria-label="upload picture" component="span" sx={{ p:1, color: '#E09B88' }}>
+                        <IconButton onClick={()=> window.open('https://www.behance.net/hazelypk')} aria-label="upload picture" component="span" sx={{ p:1, color: '#E09B88' }}>
                             <FontAwesomeIcon icon={faBehanceSquare} />
                         </IconButton>
                     </Paper>

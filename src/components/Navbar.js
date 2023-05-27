@@ -34,7 +34,7 @@ function Navbar() {
                     <Grow
                        in={show}
                     >
-                       <a href="#creative" style={{color:'#856C63', textDecoration:'none', fontSize:'18px', letterSpacing:2, marginLeft:"20px"}}>Creative</a>
+                       <a href="#uiux" style={{color:'#856C63', textDecoration:'none', fontSize:'18px', letterSpacing:2, marginLeft:"20px"}}>UI/UX</a>
                     </Grow>
                     <Button
                         id="basic-button"

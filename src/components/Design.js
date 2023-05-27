@@ -1,16 +1,37 @@
 import React from 'react'
-import { Box, Card, CardContent, CardMedia, CardActionArea, Grid, Typography, Link, Paper} from '@mui/material';
-import { borderRadius } from '@mui/system';
+import { Box, Card, CardContent, CardMedia, Typography, Grid, Link, Paper} from '@mui/material';
+
+const itemData = [
+    {
+        name:'Google Developer Student Club Landing Page',
+        description:'User interface design for google developer student association',
+        link:'https://www.behance.net/gallery/142999005/Landing-Page',
+        image:'url(project-uiux-google.webp)',
+        button:'Read More'
+    },
+    {
+        name:'Booking App Prototype',
+        description:'Booking system that allow its partner organizations to reserve equipment',
+        link:'https://www.figma.com/proto/Hg9Y3AvwAvabNbZPQQ4sPN/Software-Engineering---Group-CF?node-id=2-3&starting-point-node-id=2%3A3&scaling=scale-down',
+        image:'url(booking-app-prototype.webp)',
+        button:'Try Me'
+    }
+
+]
+
+
+
 function Design() {
     return (
-        <div id="creative" style={{marginBottom:"80px"}} >
+        <div id="uiux" style={{marginBottom:"80px"}} >
         <Typography variant="h3" component="h3" >
-            Creative
+            UI/UX
         </Typography>
         <Typography variant="subtitle1" component="p" >
             Everything you can imagine is real.
         </Typography>
-        <Link href="https://www.behance.net/gallery/142999005/Landing-Page" underline="none">
+        {itemData.map((item) => (
+        <Link href={item.link} underline="none">
         <Paper
             sx={{
                 position: 'relative',
@@ -20,7 +41,7 @@ function Design() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 backgroundPosition: 'center',
-                backgroundImage: `url(project-uiux-google.webp)`,
+                backgroundImage:`${item.image}`,
                 width: "56%",
                 height: "450px",
                 margin:"auto",
@@ -36,7 +57,7 @@ function Design() {
                 right: 0,
                 left: 0,
                 backgroundColor: 'rgba(0,0,0,.4)',
-                borderRadius: "5px"
+                borderRadius: "5px",
             }}
         />
       
@@ -51,20 +72,21 @@ function Design() {
                 >
 
                     <Typography component="h4" variant="h4" sx={{ textAlign:"left", color:"white"}}>
-                        Google Developer Student Club Landing Page
+                    {item.name}
                     </Typography>
                     <Typography variant="body1" paragraph sx={{fontStyle:"italic", textAlign:"left", my:1}}>
-                    <p>User interface design for Student Association</p>
+                    <p>{item.description}</p>
                     </Typography>
-                    <div style={{textAlign:'left', marginTop:"30px", color:"black", fontSize:"1.2rem"}}>
-                        Continue Reading...
+                    <div style={{textAlign:'left', padding:'5px', marginTop:"30px", color:"#E09B88", backgroundColor:"white", fontSize:"0.9rem", border:'#E09B88 solid 2px', borderRadius:'7px', width:'100px', textAlign:'center'}}>
+                        {item.button} &#8702;
                     </div>
                     
                 </Box>
             </Grid>
         </Grid> 
         </Paper> 
-        </Link>  
+        </Link>
+        ))}  
     </div>
 )}
 export default Design;

@@ -26,7 +26,7 @@ const itemData = [
 
 ]
 
-function Artwork() {
+function Creative() {
     return (
     <div>
         <Typography 
@@ -57,4 +57,4 @@ function Artwork() {
 }
 
 
-export default Artwork;
+export default Creative;
