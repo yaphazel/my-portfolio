@@ -1,7 +1,14 @@
 import React from 'react'
-import { Box, Card, CardContent, CardMedia, Typography, Grid, Link, Paper} from '@mui/material';
+import { Box, Typography, Grid, Link, Paper} from '@mui/material';
 
 const itemData = [
+    {
+        name:'UX Evaluation - Enertime',
+        description:'Evaluation of Fitness Gaming Application',
+        link:'https://docs.google.com/document/d/10aGSrwr0KqhTUsGDlzqQdx5EcJ96FInUs85Uqv6Um7M/edit?usp=sharing',
+        image:'url(ux-eval.webp)',
+        button:'Read More'
+    },
     {
         name:'Google Developer Student Club Landing Page',
         description:'User interface design for google developer student association',
@@ -15,7 +22,7 @@ const itemData = [
         link:'https://www.figma.com/proto/Hg9Y3AvwAvabNbZPQQ4sPN/Software-Engineering---Group-CF?node-id=2-3&starting-point-node-id=2%3A3&scaling=scale-down',
         image:'url(booking-app-prototype.webp)',
         button:'Try Me'
-    }
+    },
 
 ]
 
@@ -77,7 +84,7 @@ function Design() {
                     <Typography variant="body1" paragraph sx={{fontStyle:"italic", textAlign:"left", my:1}}>
                     <p>{item.description}</p>
                     </Typography>
-                    <div style={{textAlign:'left', padding:'5px', marginTop:"30px", color:"#E09B88", backgroundColor:"white", fontSize:"0.9rem", border:'#E09B88 solid 2px', borderRadius:'7px', width:'100px', textAlign:'center'}}>
+                    <div style={{padding:'5px', marginTop:"30px", color:"#E09B88", backgroundColor:"white", fontSize:"0.9rem", border:'#E09B88 solid 2px', borderRadius:'7px', width:'100px', textAlign:'center'}}>
                         {item.button} &#8702;
                     </div>
                     
